@@ -4,10 +4,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  # code actions here!
+
   get '/recipes' do
-    @recipes = Recipe.all #define instance variable for view
-    erb :index #show all recipes view (index)
+    @recipes = Recipe.all
+    erb :index
   end
 
 
